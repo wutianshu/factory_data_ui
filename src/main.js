@@ -4,15 +4,17 @@ import Vue from 'vue'
 import VueJsonp from 'vue-jsonp'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+// 引入公共JS文件
+import commonJS from './commonJs/common.js'
+// 引入公共样式文件
+import './style/common.css'
 import App from './App'
 import router from './router'
 import cookies from 'vue-cookies'
-// 引入公共JS文件
-import commonJS from './commonJs/common.js'
+
 // 引入全局变量
 import global from './components/Global.vue'
-// 引入公共样式文件
-import './style/common.css'
+
 import axios from 'axios'
 
 Vue.prototype.commonJS = commonJS
